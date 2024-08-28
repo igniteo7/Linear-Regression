@@ -24,9 +24,10 @@ def main():
 
     b = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX)
     a = (sumY - b * sumX) / n
-
-    print(f"Calculated value of a is {a} and b is {b}")
-    print(f"Equation of best fit is: y = {a} + {b}x")
+    rounded_b = round(b,4)
+    rounded_a = round(a,4)
+    print(f"Calculated value of a is {rounded_a} and b is {rounded_b}")
+    print(f"Equation of best fit is: y = {rounded_a} + {rounded_b}x")
 
 if __name__ == "__main__":
     main()
